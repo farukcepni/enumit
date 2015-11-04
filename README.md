@@ -1,40 +1,32 @@
 enumit
-====
-Enumeration class for python. 
-
+======
+Enumeration library for python.
 
 Basic Usage
-====
+-----------
+::
+
+    from enumit import Enum
+
 
     class Status(Enum):
-        WAITING = Enum.Field('waiting', 'Waiting')
-        APPROVED = Enum.Field('approved', 'Approved')
+        APPROVED = Enum.Field('approved')
+        DENIED = Enum.Field('denied', 'Denied')
 
-
-    >> print Status.APPROVED
+    >> Status.APPROVED
     >> approved
-    
-    >> print Status['approved']
+
+    >> Status['approved']
     >> Approved
 
-    # choices, values and names will be in defined order.
-    >> print Status.choices()
+    >> Status.choices()
     >> [('approved', 'Approved'), ('denied', 'Denied')]
 
-    >> print Status.values()
+    >> Status.values()
     >> ['approved', 'denied']
 
-    >> print Status.names()
+    >> Status.names()
     >> ['Approved', 'Denied']
-    
-    >> Status.APPROVED = 'new_approved_value'
-    # raise ValueError('Enum field can not be changed.')
-    
-    >> del Status.APPROVED
-    # raise ValueError('Enum field can not be deleted.')
 
     >> 'approved' in Status
     >> True
-
-    >> len(Status)
-    >> 2
