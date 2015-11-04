@@ -3,7 +3,7 @@ from distutils.core import setup
 
 setup(
     name='enumit',
-    version='1.0',
+    version='1.1',
     description='Enumeration library for python.',
     long_description=open('README.md', 'r').read(),
     author='Faruk Cepni',
