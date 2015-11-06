@@ -6,7 +6,7 @@ install
 =======
 ::
 
-    pip intall enumit
+    pip install enumit
 
 
 Usage
