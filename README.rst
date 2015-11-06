@@ -11,7 +11,7 @@ install
 
 Usage
 -----------
-::
+.. code-block:: python
 
     from enumit import Enum
 
