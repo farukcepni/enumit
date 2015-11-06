@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='enumit',
-    version='1.1',
+    version='1.2',
     description='Enumeration library for python.',
     long_description=open('README.rst', 'r').read(),
     author='Faruk Cepni',

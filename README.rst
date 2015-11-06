@@ -2,7 +2,14 @@ enumit
 ======
 Enumeration library for python.
 
-Basic Usage
+install
+=======
+::
+
+    pip intall enumit
+
+
+Usage
 -----------
 ::
 
